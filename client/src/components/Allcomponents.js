@@ -1,17 +1,22 @@
-import React from 'react'
-import { Route, Routes, useNavigate } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Navigate, Route, Routes, useNavigate } from 'react-router-dom'
 import Header from './Header'
 import Home from './Home'
 import Employeelist from './Employeelist'
 import Createemployee from './Createemployee'
 import Editemployee from './Editemployee'
+import Login from './Login'
 
 const Allcomponents = () => {
   const nav = useNavigate()
-  if(localStorage.getItem("cred") === null){
-      nav("/login")
-  }
+  useEffect(() => {
 
+    if (localStorage.getItem("cred") === null ) {
+      nav('/login')
+    } else {
+      nav('/')
+    }
+  }, []);
   return (
     <div>
         <Header/>

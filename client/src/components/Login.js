@@ -1,11 +1,13 @@
 import axios from 'axios';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [username , setUsername]=useState("")
   const [password , setPassword] = useState("")
   let nav = useNavigate();
+
+  
   const handleSubmit = async(e)=>{
     e.preventDefault();
     const cred = {
@@ -23,7 +25,8 @@ const Login = () => {
       localStorage.setItem("cred",JSON.stringify(cred))
       alert("Login Success")
       setTimeout(() => {
-        window.location.reload();
+        
+        nav('/')
       }, 1000);
     } catch (error) {
       alert("Invalid Credentials...")
