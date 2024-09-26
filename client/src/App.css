@@ -1,0 +1,82 @@
+.signandlogin {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  min-width: 600px;
+  min-height: 200px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title {
+  background-color: yellow;
+  width: 100%;
+}
+.input {
+  width: 200px;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.header {
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid;
+}
+h3 {
+  cursor: pointer;
+}
+.table {
+  width: 100%;
+
+  padding: 10px;
+}
+.table_heading {
+  background-color: rgba(100, 148, 237, 0.229);
+}
+
+.secondhead {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.body_data{
+  text-align: center;
+}
+
+.employee {
+  width: 600px;
+  min-height: 500px;
+  border: 2px solid;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+select{
+  width: 200px;
+}
+.ratio {
+  display: flex;
+}
+label{
+  max-width: 200px;
+  text-align: left;
+}
+
+.employee_data {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
